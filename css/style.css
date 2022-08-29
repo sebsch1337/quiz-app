@@ -25,7 +25,8 @@
 }
 
 body {
-  background-color: #5a786f;
+  /* background-color: #5a786f; */
+  background-color: #ccd2c6;
   font-family: "Open Sans";
 }
 
@@ -64,7 +65,6 @@ main {
   background-color: #8ba88e;
   border-radius: 15px;
   padding: 10px;
-  border: solid 4px #ccd2c6;
 }
 
 .card-question {
