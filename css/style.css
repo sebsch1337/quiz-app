@@ -39,6 +39,8 @@ main {
 }
 
 .card-question {
+  height: 33%;
+  margin-top: 25px;
   font-size: 14pt;
   font-weight: bold;
   text-align: center;
@@ -56,6 +58,26 @@ main {
 
 .card-answer {
   margin-top: 10px;
-  font-size: 12pt;
+  font-size: 10pt;
   visibility: visible;
+}
+
+.card-box-tag-area {
+  height: 33%;
+  width: 100%;
+  padding: 0 10px;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 5px;
+}
+
+.card-tag-button {
+  background-color: #ccd2c6;
+  color: #3a4e51;
+  border: dotted 1px #3a4e51;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 8pt;
 }
