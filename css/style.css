@@ -30,11 +30,19 @@ body {
 }
 
 header {
-  background-color: #3a4e51;
-  color: #ccd2c6;
-  padding: 25px;
   display: flex;
   justify-content: center;
+  align-items: center;
+  height: 50px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: #3a4e51;
+  color: #ccd2c6;
+}
+
+header h1 {
+  font-size: 18pt;
 }
 
 main {
