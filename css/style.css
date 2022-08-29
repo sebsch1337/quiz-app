@@ -1,16 +1,116 @@
+/* open-sans-regular - latin */
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/open-sans-v34-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("../fonts/open-sans-v34-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/open-sans-v34-latin-regular.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/open-sans-v34-latin-regular.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../fonts/open-sans-v34-latin-regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/open-sans-v34-latin-regular.svg#OpenSans") format("svg"); /* Legacy iOS */
+}
+
 *,
 *::before,
 *::after {
+  box-sizing: border-box;
   margin: 0;
 }
 
 body {
   background-color: #5a786f;
+  font-family: "Open Sans";
 }
 
 header {
   background-color: #3a4e51;
+  color: #ccd2c6;
   padding: 25px;
   display: flex;
   justify-content: center;
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 15px;
+}
+
+.card-box {
+  position: relative;
+  width: 350px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #8ba88e;
+  border-radius: 15px;
+  padding: 10px;
+  border: solid 4px #ccd2c6;
+}
+
+.card-question {
+  height: 33%;
+  margin-top: 25px;
+  font-size: 14pt;
+  font-weight: bold;
+  text-align: center;
+}
+
+.card-reveal-button {
+  background-color: #3a4e51;
+  color: #ccd2c6;
+  margin-top: 15px;
+  border: solid 2px #ccd2c6;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-family: "Open Sans";
+  font-size: 11pt;
+}
+
+.card-answer {
+  margin-top: 10px;
+  font-size: 10pt;
+  padding: 10px;
+  visibility: visible;
+}
+
+.card-box-tag-area {
+  height: 33%;
+  width: 100%;
+  padding: 0 10px;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 5px;
+}
+
+.card-tag-button {
+  background-color: #ccd2c6;
+  color: #3a4e51;
+  border: dotted 1px #3a4e51;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 8pt;
+}
+
+.bookmark-icon {
+  position: absolute;
+  top: -10px;
+  right: 20px;
+}
+
+.bookmark-icon-img {
+  height: 40px;
 }
