@@ -15,5 +15,5 @@
 
 .navigation__button--active,
 .navigation__button:hover {
-  background-color: #303f42;
+  background-color: var(--darker-color);
 }

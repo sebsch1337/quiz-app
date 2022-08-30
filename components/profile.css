@@ -8,7 +8,7 @@
   margin-top: 25px;
   width: 250px;
   border-radius: 50%;
-  border: solid 5px #303f42;
+  border: solid 5px var(--dark-color);
   padding: 5px;
 }
 
