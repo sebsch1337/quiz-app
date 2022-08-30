@@ -5,44 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz App</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
       <h1>Quiz App</h1>
     </header>
     <main>
-      <section class="profile-container">
+      <section class="profile">
         <h1>Hi Sebastian!</h1>
-        <img src="img/me.jpg" alt="A picture of me" class="profile-pic" />
-        <p class="profile-text">
+        <img src="img/me.jpg" alt="A picture of me" class="profile__pic" />
+        <p class="profile__text">
           I don't know what a profile in a quiz game is needed for. But
           anyways...<br /><br />
-          <span class="profile-cheers">Cheers!</span>
+          <span class="profile__text__cheers">Cheers!</span>
         </p>
       </section>
     </main>
 
-    <footer>
-      <nav>
-        <a href="./" class="nav-button">
-          <img src="img/home.svg" alt="Navigate to home" class="nav-icon-img" />
+    <footer class="footer">
+      <nav class="navigation">
+        <a href="./" class="navigation__button">
+          <img src="img/home.svg" alt="Navigate to home" />
         </a>
 
-        <a href="./bookmarks.html" class="nav-button">
-          <img
-            src="img/bookmarks.svg"
-            alt="Navigate to bookmarks"
-            class="nav-icon-img"
-          />
+        <a href="./bookmarks.html" class="navigation__button">
+          <img src="img/bookmarks.svg" alt="Navigate to bookmarks" />
         </a>
 
-        <a href="./profile.html" class="nav-button active">
-          <img
-            src="img/profile.svg"
-            alt="Navigate to profile"
-            class="nav-icon-img"
-          />
+        <a
+          href="./profile.html"
+          class="navigation__button navigation__button--active"
+        >
+          <img src="img/profile.svg" alt="Navigate to profile" />
         </a>
       </nav>
     </footer>

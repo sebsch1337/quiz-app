@@ -5,50 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz App</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
       <h1>Quiz App</h1>
     </header>
     <main>
-      <section class="card-box">
-        <a href="#" class="bookmark-icon"
+      <section class="card">
+        <a href="#" class="card__bookmark-icon"
           ><img
             src="img/bookmark_remove.svg"
             alt="Add to bookmarks"
-            class="bookmark-icon-img"
+            class="card__bookmark-icon__img"
         /></a>
-        <p class="card-question">What property flips the axes in flexbox?</p>
-        <input type="button" value="Show answer" class="card-reveal-button" />
-        <p class="card-answer">flex-direction</p>
-        <ul class="card-box-tag-area">
-          <li><a href="#css" class="card-tag-button" />#css</a></li>
-          <li><a href="#flexbox" class="card-tag-button" />#flexbox</a></li>
-          <li><a href="#axes" class="card-tag-button" />#axes</a></li>
+        <p class="card__question">What property flips the axes in flexbox?</p>
+        <input type="button" value="Show answer" class="card__reveal-button" />
+        <p class="card__answer">flex-direction</p>
+        <ul class="card__tag-list">
+          <li><a href="#css" class="card__tag" />#css</a></li>
+          <li><a href="#flexbox" class="card__tag" />#flexbox</a></li>
+          <li><a href="#axes" class="card__tag" />#axes</a></li>
         </ul>
       </section>
     </main>
 
-    <footer>
-      <nav>
-        <a href="./" class="nav-button">
-          <img src="img/home.svg" alt="Navigate to home" class="nav-icon-img" />
+    <footer class="footer">
+      <nav class="navigation">
+        <a href="./" class="navigation__button">
+          <img src="img/home.svg" alt="Navigate to home" />
         </a>
 
-        <a href="./bookmarks.html" class="nav-button active">
+        <a href="./bookmarks.html" class="navigation__button navigation__button--active">
           <img
             src="img/bookmarks.svg"
             alt="Navigate to bookmarks"
-            class="nav-icon-img"
           />
         </a>
 
-        <a href="./profile.html" class="nav-button">
+        <a href="./profile.html" class="navigation__button">
           <img
             src="img/profile.svg"
             alt="Navigate to profile"
-            class="nav-icon-img"
           />
         </a>
       </nav>

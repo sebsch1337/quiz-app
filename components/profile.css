@@ -1,0 +1,24 @@
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile__pic {
+  margin-top: 25px;
+  width: 250px;
+  border-radius: 50%;
+  border: solid 5px #303f42;
+  padding: 5px;
+}
+
+.profile__text {
+  margin-top: 50px;
+  text-align: justify;
+}
+
+.profile__text__cheers {
+  display: block;
+  text-align: center;
+  font-size: larger;
+}
