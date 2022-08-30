@@ -1,0 +1,19 @@
+.navigation {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+
+.navigation__button {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navigation__button--active,
+.navigation__button:hover {
+  background-color: #303f42;
+}
