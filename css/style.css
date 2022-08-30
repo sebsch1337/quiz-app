@@ -97,12 +97,13 @@ main {
 .card-box-tag-area {
   height: 33%;
   width: 100%;
-  padding: 0 10px;
+  padding: 5px;
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
   align-items: flex-end;
   gap: 5px;
+  list-style: none;
 }
 
 .card-tag-button {
@@ -110,8 +111,9 @@ main {
   color: #3a4e51;
   border: dotted 1px #3a4e51;
   border-radius: 5px;
-  padding: 5px;
+  padding: 2px 5px;
   font-size: 8pt;
+  text-decoration: none;
 }
 
 .bookmark-icon {
