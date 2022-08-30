@@ -22,6 +22,13 @@
       url("fonts/open-sans-v34-latin-regular.svg#OpenSans") format("svg"); /* Legacy iOS */
 }
 
+:root {
+  --primary-color: #8ba88e;
+  --secondary-color: #ccd2c6;
+  --dark-color: #3a4e51;
+  --darker-color: #303f42;
+}
+
 *,
 *::before,
 *::after {
@@ -30,7 +37,7 @@
 }
 
 body {
-  background-color: #ccd2c6;
+  background-color: var(--secondary-color);
   font-family: "Open Sans";
 }
 
