@@ -151,3 +151,28 @@ nav {
 .nav-button:hover {
   background-color: #303f42;
 }
+
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-pic {
+  margin-top: 25px;
+  width: 250px;
+  border-radius: 50%;
+  border: solid 5px #303f42;
+  padding: 5px;
+}
+
+.profile-text {
+  margin-top: 50px;
+  text-align: justify;
+}
+
+.profile-cheers {
+  display: block;
+  text-align: center;
+  font-size: larger;
+}
