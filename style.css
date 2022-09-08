@@ -1,5 +1,6 @@
 @import url("components/header.css");
 @import url("components/card.css");
+@import url("components/form/form.css");
 @import url("components/profile.css");
 @import url("components/footer.css");
 @import url("components/navigation.css");
@@ -43,7 +44,9 @@ body {
 
 main {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   gap: 10px;
   padding: 15px;
