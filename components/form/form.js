@@ -16,7 +16,7 @@ cardForm.addEventListener("submit", (event) => {
   event.preventDefault();
 
   const cardBox = document.createElement("li");
-  cardBox.classList = "card__item";
+  cardBox.classList.add("card__item");
   cardList.append(cardBox);
 
   const bookmarkButton = document.createElement("button");
@@ -54,6 +54,20 @@ cardForm.addEventListener("submit", (event) => {
   tagListItem.classList = "card__tag";
   tagListItem.textContent = event.target.tag.value;
   tagList.append(tagListItem);
+
+  revealButton.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    if (cardAnswer.style.visibility === "visible") {
+      cardAnswer.style.visibility = "hidden";
+      revealButton.textContent = "Show answer";
+    } else {
+      cardAnswer.style.visibility = "visible";
+      revealButton.textContent = "Hide answer";
+    }
+  });
+
+  setTimeout(() => cardBox.classList.add("card__item__enter"), 0);
 });
 
 function countCharacters(event) {
