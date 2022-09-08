@@ -42,6 +42,7 @@
           id="question"
           data-js="question-text"
           maxlength="150"
+          required
         ></textarea>
         <p class="card__form__counter" data-js="question-text-counter">
           150 characters left
@@ -53,12 +54,13 @@
           id="answer"
           data-js="answer-text"
           maxlength="150"
+          required
         ></textarea>
         <p class="card__form__counter" data-js="answer-text-counter">
           150 characters left
         </p>
         <label for="tag" class="card__form__label">Your tag:</label>
-        <input type="text" name="tag" id="tag" class="card__form__input" data-js="tag-input" />
+        <input type="text" name="tag" id="tag" class="card__form__input" data-js="tag-input" required />
         <button
           class="card__form__button"
           type="submit"
