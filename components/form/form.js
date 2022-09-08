@@ -51,9 +51,13 @@ cardForm.addEventListener("submit", (event) => {
   cardBox.append(tagList);
 
   const tagListItem = document.createElement("li");
-  tagListItem.classList = "card__tag";
-  tagListItem.textContent = event.target.tag.value;
   tagList.append(tagListItem);
+
+  const tagListItemLink = document.createElement("a");
+  tagListItemLink.classList = "card__tag";
+  tagListItemLink.href = "#" + event.target.tag.value;
+  tagListItemLink.textContent = "#" + event.target.tag.value;
+  tagListItem.append(tagListItemLink);
 
   revealButton.addEventListener("click", (e) => {
     e.preventDefault();
