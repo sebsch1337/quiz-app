@@ -1,4 +1,4 @@
-.card-form {
+.card__form {
   margin-top: 2em;
   width: 350px;
   display: flex;
@@ -6,27 +6,27 @@
   flex-wrap: wrap;
 }
 
-.card-form__text {
+.card__form__text {
   height: 5em;
   width: 100%;
 }
 
-.card-form__label,
-.card-form__button {
+.card__form__label,
+.card__form__button {
   font-size: 0.9em;
 }
 
-.card-form__button {
+.card__form__button {
   width: 10em;
   margin-top: 1em;
   align-self: center;
 }
 
-.card-form__counter {
+.card__form__counter {
   text-align: right;
   font-size: 0.7em;
 }
 
-.card-form__counter--red {
+.card__form__counter--red {
   color: red;
 }

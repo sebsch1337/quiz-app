@@ -14,50 +14,54 @@
       <h1>Quiz App</h1>
     </header>
     <main>
-      <section class="card">
-        <a href="#" class="card__bookmark-icon"
-          ><img
-            src="img/bookmark_add.svg"
-            alt="Add to bookmarks"
-            class="card__bookmark-icon__img"
-        /></a>
-        <p class="card__question">What property flips the axes in flexbox?</p>
-        <button class="card__reveal-button" data-js="reveal-button">Show answer</button>
-        <p class="card__answer" data-js="answer">flex-direction</p>
-        <ul class="card__tag-list">
-          <li><a href="#css" class="card__tag" />#css</a></li>
-          <li><a href="#flexbox" class="card__tag" />#flexbox</a></li>
-          <li><a href="#axes" class="card__tag" />#axes</a></li>
-        </ul>
-      </section>
+      <ul class="card__list" data-js="card-list">
+        <li class="card__item">
+          <button class="card__bookmark-button">
+            <img
+              src="img/bookmark_add.svg"
+              alt="Add to bookmarks"
+              class="card__bookmark-icon"
+          />
+          </button>
+          <p class="card__question">What property flips the axes in flexbox?</p>
+          <button class="card__reveal-button" data-js="reveal-button">Show answer</button>
+          <p class="card__answer" data-js="answer">flex-direction</p>
+          <ul class="card__tag-list">
+            <li><a href="#css" class="card__tag" />#css</a></li>
+            <li><a href="#flexbox" class="card__tag" />#flexbox</a></li>
+            <li><a href="#axes" class="card__tag" />#axes</a></li>
+          </ul>
+        </li>
+      </ul>
 
-      <form action="" class="card-form" data-js="card-form">
-        <label class="card-form__label" for="question">Your question:</label>
+
+      <form action="" class="card__form" data-js="card-form">
+        <label class="card__form__label" for="question">Your question:</label>
         <textarea
-          class="card-form__text"
+          class="card__form__text"
           name="question"
           id="question"
           data-js="question-text"
           maxlength="150"
         ></textarea>
-        <p class="card-form__counter" data-js="question-text-counter">
+        <p class="card__form__counter" data-js="question-text-counter">
           150 characters left
         </p>
-        <label for="answer" class="card-form__label">Your answer:</label>
+        <label for="answer" class="card__form__label">Your answer:</label>
         <textarea
-          class="card-form__text"
+          class="card__form__text"
           name="answer"
           id="answer"
           data-js="answer-text"
           maxlength="150"
         ></textarea>
-        <p class="card-form__counter" data-js="answer-text-counter">
+        <p class="card__form__counter" data-js="answer-text-counter">
           150 characters left
         </p>
-        <label for="tag" class="card-form__label">Your tag:</label>
+        <label for="tag" class="card__form__label">Your tag:</label>
         <input type="text" name="tag" id="tag" data-js="tag-input" />
         <button
-          class="card-form__button"
+          class="card__form__button"
           type="submit"
           name="submit"
           id="submit"

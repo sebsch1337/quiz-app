@@ -1,4 +1,8 @@
-.card {
+.card__list {
+  padding: 0;
+}
+.card__item {
+  margin-top: 1em;
   position: relative;
   width: 350px;
   height: 300px;
@@ -64,12 +68,14 @@
   text-decoration: none;
 }
 
-.card__bookmark-icon {
+.card__bookmark-button {
   position: absolute;
   top: -5px;
   right: 20px;
+  background-color: transparent;
+  border: 0;
 }
 
-.card__bookmark-icon__img {
+.card__bookmark-icon {
   height: 35px;
 }
