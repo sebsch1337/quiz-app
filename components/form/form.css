@@ -1,0 +1,49 @@
+.card__form_title {
+  margin-top: 2em;
+}
+
+.card__form {
+  margin-top: 1em;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.card__form__text {
+  height: 6em;
+  width: 100%;
+}
+
+.card__form__text,
+.card__form__input {
+  background-color: var(--secondary-color);
+  border: dashed;
+  border-radius: 1em;
+  padding: 1em;
+}
+
+.card__form__label,
+.card__form__button {
+  font-size: 0.8em;
+}
+
+.card__form__button {
+  width: 10em;
+  height: 2em;
+  margin-top: 1em;
+  align-self: center;
+  background-color: var(--darker-color);
+  border: 2px solid var(--primary-color);
+  border-radius: 1em;
+  color: var(--secondary-color);
+}
+
+.card__form__counter {
+  text-align: right;
+  font-size: 0.7em;
+}
+
+.card__form__counter--red {
+  color: red;
+}
