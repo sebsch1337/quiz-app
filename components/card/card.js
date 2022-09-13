@@ -1,3 +1,5 @@
+import cards from "../../db.js";
+
 function createCard(questionValue, answerValue, tagValue, isBookmarked) {
   const cardBox = document.createElement("li");
   cardBox.classList.add("card__item");
@@ -7,14 +9,14 @@ function createCard(questionValue, answerValue, tagValue, isBookmarked) {
   cardBox.append(bookmarkButton);
 
   const bookmarkIcon = document.createElement("img");
+  bookmarkIcon.src = "img/bookmark_add.svg";
   if (isBookmarked) {
-    bookmarkIcon.src = "img/bookmarked.svg";
+    bookmarkIcon.classList = "card__bookmark-icon card__bookmark-icon--active";
     bookmarkIcon.alt = "Remove from bookmarks";
   } else {
-    bookmarkIcon.src = "img/bookmark_add.svg";
+    bookmarkIcon.classList = "card__bookmark-icon";
     bookmarkIcon.alt = "Add to bookmarks";
   }
-  bookmarkIcon.classList = "card__bookmark-icon";
   bookmarkButton.append(bookmarkIcon);
 
   const cardQuestion = document.createElement("p");
@@ -57,6 +59,12 @@ function createCard(questionValue, answerValue, tagValue, isBookmarked) {
       cardAnswer.style.visibility = "visible";
       revealButton.textContent = "Hide answer";
     }
+  });
+
+  bookmarkButton.addEventListener("click", (e) => {
+    e.preventDefault();
+    bookmarkIcon.classList.toggle("card__bookmark-icon--active");
+    console.log("bookmark clicked");
   });
 
   setTimeout(() => cardBox.classList.add("card__item__enter"), 0);
