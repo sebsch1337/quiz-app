@@ -14,12 +14,11 @@
   border-radius: 15px;
   padding: 10px;
   transform: scale(0, 0);
-  transition: 1s linear;
 }
 
 .card__item__enter {
   transform: scale(1, 1);
-  transition: 1s ease;
+  transition: 0.5s ease;
 }
 
 .card__question {
