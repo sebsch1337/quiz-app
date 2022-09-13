@@ -1,4 +1,4 @@
-function createCard(questionValue, answerValue, tagValue) {
+function createCard(questionValue, answerValue, tagValue, isBookmarked) {
   const cardBox = document.createElement("li");
   cardBox.classList.add("card__item");
 
@@ -7,8 +7,13 @@ function createCard(questionValue, answerValue, tagValue) {
   cardBox.append(bookmarkButton);
 
   const bookmarkIcon = document.createElement("img");
-  bookmarkIcon.src = "img/bookmark_add.svg";
-  bookmarkIcon.alt = "Add to bookmarks";
+  if (isBookmarked) {
+    bookmarkIcon.src = "img/bookmarked.svg";
+    bookmarkIcon.alt = "Remove from bookmarks";
+  } else {
+    bookmarkIcon.src = "img/bookmark_add.svg";
+    bookmarkIcon.alt = "Add to bookmarks";
+  }
   bookmarkIcon.classList = "card__bookmark-icon";
   bookmarkButton.append(bookmarkIcon);
 

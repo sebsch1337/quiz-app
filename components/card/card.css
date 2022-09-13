@@ -18,7 +18,7 @@
 
 .card__item__enter {
   transform: scale(1, 1);
-  transition: 1s ease;
+  transition: 0.5s ease;
 }
 
 .card__question {
