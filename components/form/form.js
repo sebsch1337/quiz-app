@@ -1,3 +1,20 @@
+import createCard from "../card/card.js";
+
+const cardList = document.querySelector("[data-js='card-list']");
+const cardForm = document.querySelector("[data-js='card-form']");
+
+cardForm.addEventListener("submit", (event) => {
+  event.preventDefault();
+
+  const newCard = createCard(
+    event.target.question.value,
+    event.target.answer.value,
+    event.target.tag.value
+  );
+
+  cardList.append(newCard);
+});
+
 const questionText = document.querySelector("[data-js='question-text']");
 const answerText = document.querySelector("[data-js='answer-text']");
 const questionCounter = document.querySelector(
@@ -26,5 +43,3 @@ function countCharacters(event) {
     }
   }
 }
-
-export default countCharacters;
