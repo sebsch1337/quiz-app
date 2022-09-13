@@ -85,3 +85,8 @@
 .card__bookmark-icon {
   height: 35px;
 }
+
+.card__bookmark-icon--active {
+  height: 35px;
+  content: url("../../img/bookmarked.svg");
+}
